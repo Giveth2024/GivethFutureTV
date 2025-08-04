@@ -104,14 +104,6 @@ const channels = [
     needsProxy: false  // or false depending on the channel
   },
   {
-    id: "CartoonNetwork.us",
-    logo: "https://i.pinimg.com/736x/75/8b/74/758b746fa17dcfcf1b926f970e4e0285.jpg",
-    name: "Cartoon Network",
-    url: "http://localhost:3001/cn.html",
-    group: "Business",
-    needsProxy: false  // or false depending on the channel
-  },
-  {
     id: "DisneyChannel.us@East",
     logo: "https://i.pinimg.com/736x/18/2d/66/182d663a57780ccf78d2dbc21c8f106f.jpg",
     name: "Disney Channel East",
