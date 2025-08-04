@@ -1,0 +1,128 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background: linear-gradient(145deg, #1b1f23, #0f1214);
+  color: #f1f1f1;
+  padding: 24px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #21262d;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2b313a;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #d6eaff;
+  letter-spacing: 0.5px;
+}
+
+header button {
+  background: #2d89ef;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header button:hover {
+  background: #1a73e8;
+}
+
+/* Player Section */
+.player-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+video#video-player {
+  width: 100%;
+  max-width: 960px;
+  border-radius: 14px;
+  background-color: #000;
+  border: 1px solid #2a2f35;
+  box-shadow: 0 0 20px rgba(32, 202, 255, 0.07);
+  transition: transform 0.2s ease;
+}
+
+video#video-player:hover {
+  transform: scale(1.005);
+}
+
+/* Channel Info Card */
+.channel-info {
+  display: flex;
+  align-items: center;
+  background-color: #1e242b;
+  border: 1px solid #2a2f35;
+  border-radius: 12px;
+  padding: 18px 22px;
+  gap: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+.channel-info img {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain; /* Changed from cover to contain */
+  object-position: center center;
+  border-radius: 50%;
+  border: 2px solid #3a4550;
+  background-color: #111;
+  padding: 4px; /* Optional: add spacing inside */
+  transition: transform 0.3s ease;
+}
+
+
+.channel-info img:hover {
+  transform: scale(1.04);
+}
+
+.channel-info h2 {
+  font-size: 1.2rem;
+  color: #9ddfff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.channel-info p {
+  font-size: 0.92rem;
+  color: #b4b4b4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .channel-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .channel-info img {
+    width: 60px;
+  }
+}
